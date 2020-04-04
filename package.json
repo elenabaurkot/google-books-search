@@ -1,9 +1,6 @@
 {
   "name": "google-books-search",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.14.1"
-  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -12,7 +9,8 @@
     "start:dev": "concurrently \"nodemon server.js --ignore 'client/*'\" \"npm run client\" ",
     "install": "cd client && npm run install",
     "client": "cd client && npm run start", 
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
