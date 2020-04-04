@@ -64,6 +64,43 @@ class Search extends Component {
                 this.setState({ savedBookIds })
                })
                .catch(err => this.setState({ error: err }))
+        };
+
+        render() {
+            return (
+                <>
+                  <Jumbotron 
+                    fluid 
+                    bg={'dark'} 
+                    color={'light'} 
+                    pageTitle={'Search For Books'}
+                   />
+                   <Container>
+                       <Row>
+                         <Column xs={12} md={4}>
+                             <Card title={'Search for a book'}>
+                                 <form onSubmit={this.handleFormSubmit}>
+                                    <input
+                                    type='text'
+                                    className='form-control'
+                                    placeholder='Search for a book'
+                                    onChange={this.handleInputChange}
+                                    value={this.state.searchTerm}
+                                    name='searchTerm'
+                                    />
+                                    {this.state.error &&
+                                    !this.state.searchTerm.length && (
+                                        <div className='alert alert-danger my-2'>
+                                            {this.state.error}
+                                        </div>
+                                    )}
+                                 </form>
+                             </Card>
+                         </Column>
+                       </Row>
+                   </Container>
+                </>
+            )
         }
     };
 
