@@ -100,7 +100,6 @@ class Search extends Component {
                                  </form>
                              </Card>
                          </Column>
-                        <Column xs={12} md={8}>
                             {!this.state.bookList.length ? (
                                 <h2 className='text-center'>
                                     Search for books to begin
@@ -135,7 +134,6 @@ class Search extends Component {
                                   );
                               })
                             )}
-                        </Column>
                        </Row>
                    </Container>
                 </>
