@@ -9,6 +9,6 @@ router.route('/')
 .post(saveBook);
 
 // DELETE at /api/books/:id
-router.route(':id').delete(removeBook);
+router.route('/:id').delete(removeBook);
 
 module.exports = router;

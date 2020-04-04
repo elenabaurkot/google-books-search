@@ -9,7 +9,7 @@ export const getSavedBooks = () => {
 };
 
 export const removeBook = bookId => {
-    return axios.delete(`/api/books/${bookId}`)
+    return axios.delete(`/api/books/${bookId}`);
 };
 
 export const searchGoogleBooks = query => {

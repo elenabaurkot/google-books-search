@@ -18,7 +18,7 @@ const saveBook = (req, res) => {
     });
 };
 
-const removeBook = (req, res) => {
+const removeBook = (req, res) => { 
     Book.remove({
         _id: req.params.id
     })

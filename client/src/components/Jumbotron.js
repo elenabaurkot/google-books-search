@@ -28,7 +28,7 @@ const Jumbotron = props => {
                     </NavLink>
                   </Column>
                   <Column md={6}>
-                    <NavLink to='/saved' className='btn btn-info btn-lg'>
+                    <NavLink to='/saved' className='btn btn-warning btn-lg'>
                         Saved
                     </NavLink>
                   </Column>

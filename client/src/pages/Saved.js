@@ -21,8 +21,8 @@ class Saved extends Component {
         }).catch(err => console.log(err))
     }
 
-    handleRemoveBook = bookID => {
-        removeBook(bookID).then(this.handleGetSavedBooks).catch(err => console.log(err))
+    handleRemoveBook = bookId => {
+        removeBook(bookId).then(this.handleGetSavedBooks).catch(err => console.log(err))
     }
 
     render() {
