@@ -1,6 +1,9 @@
 {
   "name": "google-books-search",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.14.1"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -17,6 +20,10 @@
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elenabaurkot/google-books-search/issues"
+  },
+  "homepage": "https://github.com/elenabaurkot/google-books-search#readme",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4",
