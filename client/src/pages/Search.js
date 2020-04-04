@@ -94,14 +94,53 @@ class Search extends Component {
                                             {this.state.error}
                                         </div>
                                     )}
+                                    <button type='submit' className='btn btn-block btn-dark mt-2'>
+                                        Search For Books
+                                    </button>
                                  </form>
                              </Card>
                          </Column>
+                        <Column xs={12} md={8}>
+                            {!this.state.bookList.length ? (
+                                <h2 className='text-center'>
+                                    Search for books to begin
+                                </h2>
+                            ) : (
+                              this.state.bookList.map(book => {
+                                  return (
+                                      <Column key={book.bookId} md={4}>
+                                        <Card 
+                                          title={book.title}
+                                          image={book.image ? book.image : undefined}
+                                        >
+                                          <small className="text-muted">
+                                              {`By: ${
+                                                  book.authors.length ? book.author.join(', ') : null
+                                               }`}
+                                          </small>
+                                          <p>{book.description}</p>
+
+                                          <button
+                                            disabled={
+                                                this.state.savedBookIds.includes(book.bookId) ? true : undefined
+                                            }
+
+                                            className={'btn btn-success btn-sm'}
+                                            onClick={() => this.handleBookSaveBook(book.bookId)}
+                                          >
+                                              Save Book
+                                          </button>
+                                        </Card>
+                                      </Column>
+                                  );
+                              })
+                            )}
+                        </Column>
                        </Row>
                    </Container>
                 </>
-            )
+            );
         }
-    };
+    }
 
 export default Search;
