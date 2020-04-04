@@ -18,7 +18,7 @@ const BookSchema = new Schema ({
     image: {
         type: String
     },
-    linke: {
+    link: {
         type: String
     }
 });
