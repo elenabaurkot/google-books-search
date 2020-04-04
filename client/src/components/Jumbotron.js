@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const Jumbotron = props => {
     return (
-        <div>
+        <div
             className={`
                jumbotron
                ${props.fluid ? 'jumbotron-fluid' : ''}
@@ -14,6 +14,7 @@ const Jumbotron = props => {
                text-${props.color || 'dark'}
                text-center
             `}
+          >
             <Container>
                 <Row helper={'justify-content-around'}>
                   <Column>
@@ -27,7 +28,7 @@ const Jumbotron = props => {
                     </NavLink>
                   </Column>
                   <Column md={6}>
-                    <NavLink to='/save' className='btn btn-info btn-lg'>
+                    <NavLink to='/saved' className='btn btn-info btn-lg'>
                         Saved
                     </NavLink>
                   </Column>
