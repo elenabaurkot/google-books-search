@@ -17,7 +17,7 @@ app.use(routes);
 mongoose.Promise = Promise;
 mongoose.connect(
     process.env.MONGODB_URI || 'mongodb://localhost:27017/google-books-db',
-    { useNewUrlParser: true }
+    { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
 app.listen(PORT, () => console.log(`Listening on http://localhost:${PORT}`));

@@ -8,11 +8,11 @@ import { removeBook, getSavedBooks } from '../utils/API';
 
 class Saved extends Component {
     state = {
-        bookList = []
+        bookList: []
     }
 
     componentDidMount() {
-        this.handleGetSavedBooks
+        this.handleGetSavedBooks()
     };
 
     handleGetSavedBooks = () => {
@@ -54,7 +54,7 @@ class Saved extends Component {
                                 </small> 
                                 <p>{book.description}</p>
                                 <button 
-                                 onClick={() => this.handleGetSavedBooks(book._id)}
+                                 onClick={() => this.handleRemoveBook(book._id)}
                                  className="btn btn=danger btn-sm">
                                      Remove Book
                                  </button>

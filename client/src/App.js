@@ -1,8 +1,8 @@
 import React from 'react';
-import { Browser as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Search from './pages/Search';
 import Saved from './pages/Saved';
-import UhOh4040 from './pages/UhOh404';
+import UhOh404 from './pages/UhOh404';
 
 const App = () => {
   return (
