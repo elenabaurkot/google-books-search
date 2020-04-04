@@ -16,7 +16,7 @@ const App = () => {
         </Switch>
       </React.Fragment>
     </Router>
-  )
-}
+  );
+};
 
 export default App;
