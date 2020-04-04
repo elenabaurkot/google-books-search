@@ -12,16 +12,8 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/elenabaurkot/google-books-search.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/elenabaurkot/google-books-search/issues"
-  },
-  "homepage": "https://github.com/elenabaurkot/google-books-search#readme",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4",
