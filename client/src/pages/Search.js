@@ -115,7 +115,7 @@ class Search extends Component {
                                         >
                                           <small className="text-muted">
                                               {`By: ${
-                                                  book.authors.length ? book.author.join(', ') : null
+                                                  book.authors.length ? book.authors.join(', ') : null
                                                }`}
                                           </small>
                                           <p>{book.description}</p>
