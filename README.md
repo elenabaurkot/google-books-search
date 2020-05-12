@@ -1,4 +1,4 @@
-#Book Search
+# Book Search
 Book Search is a React app that allows you to search for books that you want to find using the Google Books API and save them to a "saved books" section of the app. Books can be removed from your "saved books" section as well. The website can be accessed at this link: https://elenabaurkot.github.io/weatherDashboard/
 
 ## Table of Contents
